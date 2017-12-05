@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zeropercenthappy.zphratingbar.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_count_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="count:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_count"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_count_hint"
+        app:layout_constraintStart_toEndOf="@+id/tv_count_hint" />
+
+    <TextView
+        android:id="@+id/tv_selected_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="selected:"
+        app:layout_constraintStart_toStartOf="@id/tv_count_hint"
+        app:layout_constraintTop_toBottomOf="@id/et_count" />
+
+    <EditText
+        android:id="@+id/et_selected_count"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_selected_hint"
+        app:layout_constraintStart_toEndOf="@+id/tv_selected_hint" />
+
+    <com.zeropercenthappy.ratingbarlibrary.ZPHRatingBar
+        android:id="@+id/rb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:itemClickAble="true"
+        app:itemCountNumber="5"
+        app:itemHeight="40dp"
+        app:itemSelected="@mipmap/ic_launcher"
+        app:itemSelectedNumber="0"
+        app:itemSpacing="10dp"
+        app:itemUnSelected="@mipmap/ic_launcher_round"
+        app:itemWidth="40dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_count_hint"
+        app:layout_constraintTop_toBottomOf="@+id/et_selected_count" />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/rb"
+        app:layout_constraintTop_toBottomOf="@+id/rb" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ZPHRatingBar">
+        <attr name="itemWidth" format="dimension" />
+        <attr name="itemHeight" format="dimension" />
+        <attr name="itemSpacing" format="dimension" />
+        <attr name="itemCountNumber" format="integer" />
+        <attr name="itemSelectedNumber" format="integer" />
+        <attr name="itemSelected" format="reference" />
+        <attr name="itemUnSelected" format="reference" />
+        <attr name="itemClickAble" format="boolean" />
+    </declare-styleable>
+</resources>
