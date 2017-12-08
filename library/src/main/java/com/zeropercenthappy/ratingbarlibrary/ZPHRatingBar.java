@@ -96,6 +96,9 @@ public class ZPHRatingBar extends LinearLayout implements View.OnClickListener {
                 if (i == 0) {
                     //第一个item
                     imageView = createImageView(true, 0);
+                } else if (i == itemCountNumber - 1 && itemSelectedNumber == itemCountNumber) {
+                    //最后一个item为已选中
+                    imageView = createImageView(true, 2);
                 } else {
                     //中间的item
                     imageView = createImageView(true, 1);
