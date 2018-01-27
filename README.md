@@ -1,7 +1,11 @@
 # ZPHRatingBar
+
 ---
+
 ## Download
+
 Step 1. Add the JitPack repository to your build file
+
 ```
 allprojects {
     repositories {
@@ -10,7 +14,9 @@ allprojects {
     }
 }
 ```
+
 Step 2. Add the dependency
+
 ```
 dependencies {
     compile 'com.github.zeropercenthappy:ZPHRatingBar:1.0.3'
@@ -18,6 +24,7 @@ dependencies {
 ```
 
 ## Useage
+
 ```
 <com.zeropercenthappy.ratingbarlibrary.ZPHRatingBar
     android:id="@+id/rb"
@@ -32,18 +39,11 @@ dependencies {
     app:itemUnSelected="@mipmap/ic_launcher_round"
     app:itemWidth="40dp" />
 ```
+
 ## Method
-|void setOnRatingClickCallback(OnRatingClickCallback onRatingClickCallback) | set rating item click callback |
-|-|-|
-| int getItemCountNumber() | get total rating item number |
-| void setItemCountNumber(int itemCountNumber) | set total rating item number |
-| int getItemSelectedNumber() |  get current selected rating item number |
-| void setItemSelectedNumber(int itemSelectedNumber) | set current selected rating item number |
-  
- 
-  
-  
-  
 
-
-
+- void setOnRatingClickCallback(OnRatingClickCallback onRatingClickCallback)
+- int getItemCountNumber()
+- void setItemCountNumber(int itemCountNumber)
+- int getItemSelectedNumber()
+- void setItemSelectedNumber(int itemSelectedNumber)
