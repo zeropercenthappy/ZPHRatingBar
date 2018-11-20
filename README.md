@@ -23,7 +23,7 @@ dependencies {
 }
 ```
 
-## Useage
+## Usage
 
 ```
 <com.zeropercenthappy.ratingbarlibrary.ZPHRatingBar
