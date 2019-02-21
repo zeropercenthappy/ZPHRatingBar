@@ -50,10 +50,10 @@
         app:itemClickAble="true"
         app:itemCountNumber="5"
         app:itemHeight="40dp"
-        app:itemSelected="@mipmap/ic_launcher"
+        app:itemSelected="@android:color/holo_green_light"
         app:itemSelectedNumber="0"
         app:itemSpacing="10dp"
-        app:itemUnSelected="@mipmap/ic_launcher_round"
+        app:itemUnSelected="@android:color/holo_blue_light"
         app:itemWidth="40dp"
         app:layout_constraintStart_toStartOf="@+id/tv_count_hint"
         app:layout_constraintTop_toBottomOf="@+id/et_selected_count" />
