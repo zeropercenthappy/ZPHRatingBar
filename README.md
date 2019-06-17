@@ -19,13 +19,13 @@ Step 2. Add the dependency
 
 ```
 dependencies {
-    compile 'com.github.zeropercenthappy:ZPHRatingBar:1.0.4'
+    implementation 'com.github.zeropercenthappy:ZPHRatingBar:1.0.5'
 }
 ```
 
 ## Usage
 
-```
+```xml
 <com.zeropercenthappy.ratingbarlibrary.ZPHRatingBar
     android:id="@+id/rb"
     android:layout_width="wrap_content"
